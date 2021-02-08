@@ -6,35 +6,28 @@
 
 h1 {
 	text-align: center;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 
 h2 {
+	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
-	float: right;
 	padding: 5px 10px 5px 10px;
-	position: absolute; /*Dient dazu die 5px padding oben und rechts von section zu kopensieren mit top und right=0*/
-	top: 0px;
-	right: 0px; 
 }
 
-section {
+section{
 	float: left;
 	position: relative;
-	background-color: #B4B4B4;
 	border: 1px solid black;
-	margin-left: 2.5%;
+	background-color: #B4B4B4;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	margin-left: 2.5%;
+	padding: 15px 5px 10px 5px;
 	width: 30%;
-	padding: 15px;
-	
-}
-
-p {
-	margin-top: 25px;
 }
 
 #title-chicken {
@@ -46,24 +39,23 @@ p {
 }
 
 #title-sushi {
-	background-color: #BCECFF;
+	background-color: #BCECFF	;
 }
-
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.col-md-6, .col-md-12 {
+	.col-md-6 {
+		width: 46.25%;
+		}
+	.col-md-12 {
+		width: 95%;
 	}
-  .col-md-6 {
-    width: 46.25%;
-  }
-  .col-md-12 {
-    width: 95%;
-  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px)
+{
 	.col-sm-12 {
-		width: 80%;
-		margin-left: 10%;
+		width: 95%;
+
 	}
 }
+
